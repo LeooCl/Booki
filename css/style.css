@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -74,7 +75,7 @@ header {
 }
 
 .imgHeader {
-    width: 130px;
+    width: 100px;
     margin: 1rem 0;
 }
 
@@ -85,7 +86,8 @@ header {
 
 .linkHeader {
     border-top: 2px transparent solid;
-    padding: 1rem;
+    padding: 1.25rem;
+    width: 100%;
 }
 
 .linkHeader:hover {
@@ -119,7 +121,7 @@ header {
     border-left: none;
     border-right: none;
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 10px 0 10px 10px;
     font-size:1rem;
 }
 
@@ -240,7 +242,7 @@ header {
 .hebergements-cards img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    max-height: 100px;
+    height: 120px;
 }
 
 .hebergements-cards a {
@@ -258,6 +260,10 @@ header {
 
 .hebergements-cards .card-title, .hebergements-cards .card-subtitle, .hebergements-cards .card-rating {
     padding: 0 10px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 8px 0;
 }
 
 /****** Populaires ***********/
@@ -331,6 +337,10 @@ header {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     height: 400px;
+}
+
+.objectPosition {
+    object-position: top;
 }
 
 .cardActivity {
@@ -458,6 +468,10 @@ footer a:hover {
         border-top: none;
     }
 
+    .mobile-container {
+        padding: 0 16px;
+    }
+
     .formSearch {
         justify-content: center;
     }
@@ -485,6 +499,10 @@ footer a:hover {
     .filterItem {
         flex-basis: 40%;
         margin-bottom: 0.5rem;
+    }
+
+    .hebergements .section-title {
+        margin-top: 2rem;
     }
 
     .hebergements-and-populaires {
@@ -556,6 +574,10 @@ footer a:hover {
 
     .hebergements-and-populaires section {
         padding: 2rem 1rem;
+    }
+
+    .hebergements-cards .card-subtitle {
+        margin: 0;
     }
 
     footer {
